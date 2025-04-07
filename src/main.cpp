@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "region.h"
-
+#include "simulation.h"
 using namespace std;
 
 int main() {
@@ -29,6 +29,6 @@ int main() {
 
     cout << "Initial Region State (Time Step 0):" << endl;
     region.displayRegion();
-
+    runSimulation(region, maxTimeSteps, refreshRate);
     return 0;
 }
