@@ -10,6 +10,10 @@ public:
     void displayRegion() const;
     int getWidth() const;
     int getHeight() const;
+    //getters
+    const vector<vector<Cell>>& getGrid() const { return grid; }
+    vector<vector<Cell>>& getMutableGrid() { return grid; }
+
 private:
     vector<vector<Cell>> grid;
 };
